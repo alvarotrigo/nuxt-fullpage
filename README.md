@@ -50,32 +50,6 @@ Or a separate section `nuxt-fullpage` for module options:
 }
 ```
 
-## Documentation
-
-Move to the `docs` directory:
-
-```bash
-cd docs
-```
-
-Install dependencies and start the project in development mode:
-
-```bash
-yarn && yarn dev
-```
-
-## Development
-
-1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
-
-## License
-
-[MIT License](./LICENSE)
-
-Copyright (c) Jonathan <hallo@jonathanschndr.de>
-
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-adyen-module/latest.svg
 [npm-version-href]: https://npmjs.com/package/nuxt-adyen-module
