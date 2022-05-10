@@ -1,5 +1,3 @@
-# This module is still under development. Please do not use it yet.
-
 # nuxt-fullpage
 
 [![npm version][npm-version-src]][npm-version-href]
@@ -51,17 +49,18 @@ Or a separate section `nuxt-fullpage` for module options:
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-adyen-module/latest.svg
-[npm-version-href]: https://npmjs.com/package/nuxt-adyen-module
+[npm-version-src]: https://img.shields.io/npm/v/@fullpage/nuxt-fullpage/latest.svg
+[npm-version-href]: https://www.npmjs.com/package/@fullpage/nuxt-fullpage
+[npm-downloads-src]: https://img.shields.io/npm/dm/@fullpage/nuxt-fullpage.svg
+[npm-downloads-href]: https://npmjs.com/package/@fullpage/nuxt-fullpage
+[license-src]: https://img.shields.io/github/license/alvarotrigo/nuxt-fullpage
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-adyen-module.svg
-[npm-downloads-href]: https://npmjs.com/package/nuxt-adyen-module
 
-[github-actions-ci-src]: https://github.com/baroshem/nuxt-adyen-module/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/baroshem/nuxt-adyen-module/actions?query=workflow%3Aci
+# Resources
 
-[codecov-src]: https://img.shields.io/codecov/c/github/baroshem/nuxt-adyen-module.svg
-[codecov-href]: https://codecov.io/gh/baroshem/nuxt-adyen-module
-
-[license-src]: https://img.shields.io/npm/l/nuxt-adyen-module.svg
-[license-href]: https://npmjs.com/package/nuxt-adyen-module
+- [Wordpress theme](https://alvarotrigo.com/fullPage/utils/wordpress.html)
+- [fullpage.js Extensions](https://alvarotrigo.com/fullPage/extensions/)
+- [WordPress Plugin for Elementor](https://alvarotrigo.com/fullPage/wordpress-plugin-elementor/)
+- [WordPress Plugin for Gutenberg](https://alvarotrigo.com/fullPage/wordpress-plugin-gutenberg/)
+- [CSS Easing Animation Tool - Matthew Lein](http://matthewlein.com/ceaser/) (useful to define the `easingcss3` value)
+- [fullPage.js cdnJS CDN](https://cdnjs.com/libraries/fullPage.js)

@@ -1,19 +1,32 @@
 {
-  "name": "nuxt-fullpage",
+  "name": "@fullpage/nuxt-fullpage",
   "version": "1.0.0",
   "description": "fullpage Module for Nuxt.js",
   "keywords": [
     "nuxt",
     "module",
-    "plugins"
+    "plugins",
+    "fullpage",
+    "snap",
+    "scroll",
+    "scrolling"
   ],
-  "repository": "repository",
-  "license": "MIT",
+  "author": {
+    "name": "Alvaro Trigo",
+    "email": "help@alvarotrigo.com"
+  },
   "contributors": [
     {
       "name": "Jonathan <hallo@jonathanschndr.de>"
+    },
+    {
+      "name": "Alvaro Trigo <help@alvarotrigo.com>"
     }
   ],
+  "license": {
+    "license": "GPL-3.0",
+    "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+  },
   "sideEffects": false,
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
