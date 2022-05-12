@@ -1,58 +1,42 @@
 {
   "name": "@fullpage/nuxt-fullpage",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "fullpage Module for Nuxt.js",
-  "keywords": [
-    "nuxt",
-    "module",
-    "plugins",
-    "fullpage",
-    "snap",
-    "scroll",
-    "scrolling"
-  ],
   "author": {
     "name": "Alvaro Trigo",
     "email": "help@alvarotrigo.com"
   },
   "contributors": [
-    {
-      "name": "Jonathan <hallo@jonathanschndr.de>"
-    },
-    {
-      "name": "Alvaro Trigo <help@alvarotrigo.com>"
-    }
+    "JonathanSchndr",
+    "alvarotrigo"
   ],
-  "license": {
-    "license": "GPL-3.0",
-    "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+  "license": "GPL-3.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
   },
-  "sideEffects": false,
-  "main": "dist/module.js",
-  "types": "dist/module.d.ts",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "siroc build  && mkdist --src src/runtime --dist dist/runtime"
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.3",
+    "vue-fullpage.js": "^0.2.1"
+  },
   "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
-    "@babel/plugin-transform-runtime": "latest",
-    "@babel/preset-env": "latest",
-    "@babel/preset-typescript": "latest",
-    "@nuxt/test-utils": "latest",
-    "@nuxt/types": "latest",
-    "@nuxt/typescript-build": "latest",
-    "@nuxt/typescript-runtime": "latest",
-    "@nuxtjs/eslint-config-typescript": "latest",
-    "babel-eslint": "latest",
-    "eslint": "latest",
-    "nuxt-edge": "latest",
-    "siroc": "latest"
-  },
-  "publishConfig": {
-    "access": "public"
+    "@nuxt/module-builder": "^0.1.7",
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.15.0",
+    "nuxt": "^3.0.0-rc.3"
   }
 }
