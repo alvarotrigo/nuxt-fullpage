@@ -1,6 +1,6 @@
 {
   "name": "@fullpage/nuxt-fullpage",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "description": "fullpage Module for Nuxt.js",
   "author": {
     "name": "Alvaro Trigo",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.3",
-    "vue-fullpage.js": "^0.2.1"
+    "vue-fullpage.js": "^0.2.3"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.1.7",
