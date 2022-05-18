@@ -1,7 +1,7 @@
-# Vue-fullpage.js - Official Nuxt Module
+# Vue-fullpage.js - Official Nuxt 3 Module
 
 <p align="center">
-Official Nuxt Module for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
+Official Nuxt 3 Module for the <a target="_blank" href="https://github.com/alvarotrigo/fullPage.js/">fullpage.js library</a>.
 </p>
 
 <div align="center">
