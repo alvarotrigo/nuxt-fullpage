@@ -1,20 +1,6 @@
-import { resolve } from 'path';
-import { fileURLToPath } from 'url';
-import { defineNuxtModule, addPlugin } from '@nuxt/kit';
+import jiti from "file:///Users/jonathan/Git/nuxt-fullpage/node_modules/jiti/lib/index.js";
 
-const module = defineNuxtModule({
-  meta: {
-    name: "@fullpage/nuxt-fullpage",
-    configKey: "@fullpage/nuxt-fullpage",
-    compatibility: {
-      nuxt: "^3.0.0"
-    }
-  },
-  setup(options, nuxt) {
-    const runtimeDir = fileURLToPath(new URL("./runtime", import.meta.url));
-    nuxt.options.build.transpile.push(runtimeDir);
-    addPlugin(resolve(runtimeDir, "plugin.client"));
-  }
-});
+/** @type {import("/Users/jonathan/Git/nuxt-fullpage/src/module")} */
+const _module = jiti(null, { interopDefault: true, esmResolve: true })("/Users/jonathan/Git/nuxt-fullpage/src/module.ts");
 
-export { module as default };
+export default _module;

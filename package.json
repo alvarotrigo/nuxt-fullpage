@@ -1,7 +1,8 @@
 {
   "name": "@fullpage/nuxt-fullpage",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "fullpage Module for Nuxt.js",
+  "repository": "alvarotrigo/nuxt-fullpage",
   "author": {
     "name": "Alvaro Trigo",
     "email": "help@alvarotrigo.com"
@@ -14,6 +15,7 @@
   "type": "module",
   "exports": {
     ".": {
+      "types": "./dist/types.d.ts",
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     }
@@ -27,16 +29,25 @@
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0-rc.3",
+    "@nuxt/kit": "^3.5.2",
     "vue-fullpage.js": "^0.2.14"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "^0.1.7",
-    "@nuxtjs/eslint-config-typescript": "^10.0.0",
-    "eslint": "^8.15.0",
-    "nuxt": "^3.0.0-rc.3"
+    "@types/node": "^18.16.16",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/module-builder": "^0.4.0",
+    "@nuxt/schema": "^3.5.2",
+    "@nuxt/test-utils": "^3.5.2",
+    "changelogen": "^0.5.3",
+    "eslint": "^8.41.0",
+    "nuxt": "^3.5.2",
+    "vitest": "^0.31.4"
   }
 }
