@@ -23,6 +23,7 @@ Official Nuxt 3 Module for the <a target="_blank" href="https://github.com/alvar
     - [Open source license](#open-source-license)
   - [Example](#example)
   - [Usage](#usage)
+  - [Preventing Hydration Mismatches](#preventing-hydration-mismatches)
   - [Contributing](#contributing)
   - [Resources](#resources)
 
@@ -65,6 +66,25 @@ If you are creating an open-source application under a license compatible with t
 ## Usage
 
 Take a look at the usage of the [official Vue wrapper](https://github.com/alvarotrigo/vue-fullpage.js#usage).
+
+## Preventing Hydration Mismatches
+
+To avoid hydration mismatches when using fullpage.js with Nuxt 3, always wrap your `<full-page>` component with `<ClientOnly>`:
+
+```vue
+<template>
+  <ClientOnly>
+    <full-page :options="options">
+      <div class="section">
+        <h3>Section 1</h3>
+      </div>
+      <!-- More sections here -->
+    </full-page>
+  </ClientOnly>
+</template>
+```
+
+This ensures that fullpage.js components only render on the client side and avoid server-side rendering issues.
 
 ## Contributing
 

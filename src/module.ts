@@ -12,7 +12,8 @@ export default defineNuxtModule({
   },
   setup (options, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-    nuxt.options.build.transpile.push(runtimeDir)
+    // Ensure both the runtime directory and the vue-fullpage.js module are transpiled
+    nuxt.options.build.transpile.push(runtimeDir, 'vue-fullpage.js')
     addPlugin(resolve(runtimeDir, 'plugin.client'))
   }
 })
