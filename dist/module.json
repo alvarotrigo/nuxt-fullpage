@@ -2,7 +2,7 @@
   "name": "@fullpage/nuxt-fullpage",
   "configKey": "@fullpage/nuxt-fullpage",
   "compatibility": {
-    "nuxt": "^3.0.0"
+    "nuxt": ">=3.0.0"
   },
-  "version": "0.2.7"
+  "version": "0.2.9"
 }

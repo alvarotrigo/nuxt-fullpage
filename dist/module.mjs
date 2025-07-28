@@ -7,7 +7,7 @@ const module = defineNuxtModule({
     name: "@fullpage/nuxt-fullpage",
     configKey: "@fullpage/nuxt-fullpage",
     compatibility: {
-      nuxt: "^3.0.0"
+      nuxt: ">=3.0.0"
     }
   },
   setup(options, nuxt) {
