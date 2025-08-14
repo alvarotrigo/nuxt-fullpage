@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.5.2",
-    "vue-fullpage.js": "^0.2.15"
+    "vue-fullpage.js": "^0.2.22"
   },
   "devDependencies": {
     "@types/node": "^18.16.16",
